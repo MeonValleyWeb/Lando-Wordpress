@@ -1,14 +1,9 @@
 # Application
 wp-includes/
 wp-admin/
-wp-content/plugins/*
-wp-content/plugins/
+wp-content/
 !wp-content/plugins/.gitkeep
-wp-content/mu-plugins/
 !wp-content/mu-plugins/wpstarter.php
-wp-content/themes/
-wp-content/upgrade
-wp-content/uploads/
 !wp-content/uploads/.gitkeep
 
 # WordPress
