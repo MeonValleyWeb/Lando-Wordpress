@@ -1,24 +1,34 @@
-# Ignore everything in the root except the "wp-content" directory.
+# Application
 /*
-!.gitignore
- 
-# Ignore everything in the "wp-content" directory, except the "plugins"
-# and "themes" directories.
-wp-content/plugins/
-wp-content/themes/
-wp-content/mu-plugins/
-!wp-content/mu-plugins/wp-starter.php
-!web/app/plugins/.gitkeep
-wp-content/upgrade/
-wp-content/uploads/
+wp-content/plugins/*
+wp-content/plugins
+!wp-content/plugins/.gitkeep
+wp-content/mu-plugins/*/
+!wp-content/mu-plugins/wpstarter.php
+wp-content/themes/*
+wp-content/upgrade
+wp-content/uploads/*
+!wp-content/uploads/.gitkeep
+wp-content/cache/*
 
-
+# WordPress
+.htaccess
 
 # Logs
 *.log
 
-# Composer
-/vendor/
+# Dotenv
+.env
+.env.*
+!.env.example
 
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
+
+!.gitignore
+ 
 # MacOS
 .DS_Store
