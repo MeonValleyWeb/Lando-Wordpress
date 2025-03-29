@@ -1,24 +1,28 @@
 # Application
-/*
+wp-includes/
+wp-admin/
 wp-content/plugins/*
-wp-content/plugins
+wp-content/plugins/
 !wp-content/plugins/.gitkeep
-wp-content/mu-plugins/*/
+wp-content/mu-plugins/
 !wp-content/mu-plugins/wpstarter.php
-wp-content/themes/*
+wp-content/themes/
 wp-content/upgrade
-wp-content/uploads/*
+wp-content/uploads/
 !wp-content/uploads/.gitkeep
-wp-content/cache/*
 
 # WordPress
 .htaccess
+*.php
+readme.html
+license.txt
+
 
 # Logs
 *.log
 
 # Composer
-/vendor
+/vendor/
 
 
 !.gitignore
