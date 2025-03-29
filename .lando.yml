@@ -1,0 +1,30 @@
+name: my-wp-starter
+recipe: wordpress
+config:
+  php: 8.2
+  composer_version: 2
+  webroot: .
+  database: mysql
+  cache: redis
+  ssl: false
+  via: nginx
+  xdebug: true
+services:
+  appserver:
+    build:
+      - cp wp-config-local.php wp-config.php
+    run:
+      - .lando/run.sh
+  mailhog:
+    type: mailhog
+    portforward: true
+    hogfrom:
+      - appserver
+proxy:
+  appserver_nginx:
+    - wp-starter.local
+events:
+  pre-start:
+    - appserver: .lando/pre-start.sh
+  post-start:
+    - appserver: .lando/post-start.sh

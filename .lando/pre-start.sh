@@ -1,0 +1,3 @@
+composer update
+
+composer install
