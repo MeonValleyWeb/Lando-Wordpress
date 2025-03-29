@@ -17,16 +17,9 @@ wp-content/cache/*
 # Logs
 *.log
 
-# Dotenv
-.env
-.env.*
-!.env.example
-
 # Composer
 /vendor
 
-# WP-CLI
-wp-cli.local.yml
 
 !.gitignore
  
